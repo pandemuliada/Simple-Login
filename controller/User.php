@@ -14,6 +14,16 @@
       // It will return 
       return $result;
     }
+    
+    public function register($name, $email, $password)
+    {
+      $sql = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password')";
+      $query = $this->conn->prepare($sql);
+      $result = $query->execute();
+      
+      return $result;
+      
+    }
 
     public function currentUser()
     {
