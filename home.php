@@ -25,6 +25,7 @@
     <?php if ($current_user->id_level == 1) : ?>
       <li><a href="admin/dashboard">Dashboard</a></li>
       <li><a href="admin/users">User List</a></li>
+      <li><a href="admin/products.php">Products</a></li>
     <?php endif ?>
 
     <!-- If id_level is 2 (cashier) -->
